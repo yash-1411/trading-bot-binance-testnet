@@ -1,0 +1,53 @@
+2026-07-04 00:08:25 - INFO - Logging initialized
+2026-07-04 00:08:25 - INFO - CLI mode started
+2026-07-04 00:08:29 - INFO - Binance Futures client initialized (testnet=True
+2026-07-04 00:08:29 - INFO - Order parameters validated: BTCUSDT BUY MARKET qty=0.001
+2026-07-04 00:08:29 - INFO - Placing MARKET order: BUY 0.001 BTCUSDT
+2026-07-04 00:08:30 - INFO - MARKET order placed successfully: 18777276002
+2026-07-04 00:08:30 - INFO - Order placed successfully! ID: 18777276002, Status: NEW
+2026-07-04 00:08:45 - INFO - Logging initialized
+2026-07-04 00:08:45 - INFO - CLI mode started
+2026-07-04 00:08:48 - INFO - Binance Futures client initialized (testnet=True
+2026-07-04 00:08:48 - INFO - Order parameters validated: BTCUSDT SELL LIMIT qty=0.001
+2026-07-04 00:08:48 - INFO - Placing LIMIT order: SELL 0.001 BTCUSDT @ 120000.0
+2026-07-04 00:08:49 - INFO - LIMIT order placed successfully: 18777322510
+2026-07-04 00:08:49 - INFO - Order placed successfully! ID: 18777322510, Status: NEW
+2026-07-04 00:09:18 - INFO - Logging initialized
+2026-07-04 00:09:18 - INFO - CLI mode started
+2026-07-04 00:09:22 - INFO - Binance Futures client initialized (testnet=True
+2026-07-04 00:09:23 - INFO - Account info retrieved: N/A USDT
+2026-07-04 00:09:30 - INFO - Logging initialized
+2026-07-04 00:09:30 - INFO - CLI mode started
+2026-07-04 00:09:31 - INFO - Binance Futures client initialized (testnet=True
+2026-07-04 00:09:31 - INFO - Order parameters validated: BTCUSDT BUY MARKET qty=0.001
+2026-07-04 00:09:31 - INFO - Placing MARKET order: BUY 0.001 BTCUSDT
+2026-07-04 00:09:31 - INFO - MARKET order placed successfully: 18777427954
+2026-07-04 00:09:31 - INFO - Order placed successfully! ID: 18777427954, Status: NEW
+2026-07-04 00:09:40 - INFO - Logging initialized
+2026-07-04 00:09:40 - INFO - CLI mode started
+2026-07-04 00:09:51 - INFO - Binance Futures client initialized (testnet=True
+2026-07-04 00:09:51 - INFO - Order parameters validated: BTCUSDT SELL MARKET qty=0.001
+2026-07-04 00:09:51 - INFO - Placing MARKET order: SELL 0.001 BTCUSDT
+2026-07-04 00:09:59 - INFO - MARKET order placed successfully: 18777483801
+2026-07-04 00:09:59 - INFO - Order placed successfully! ID: 18777483801, Status: NEW
+2026-07-04 00:10:19 - INFO - Logging initialized
+2026-07-04 00:10:19 - INFO - CLI mode started
+2026-07-04 00:10:22 - INFO - Binance Futures client initialized (testnet=True
+2026-07-04 00:10:22 - INFO - Order parameters validated: BTCUSDT BUY LIMIT qty=0.001
+2026-07-04 00:10:22 - INFO - Placing LIMIT order: BUY 0.001 BTCUSDT @ 100000.0
+2026-07-04 00:10:30 - ERROR - API Error placing limit order: APIError(code=-4016): Limit price can't be higher than 65292.99.
+2026-07-04 00:10:30 - ERROR - Order failed: APIError(code=-4016): Limit price can't be higher than 65292.99.
+2026-07-04 00:11:18 - INFO - Logging initialized
+2026-07-04 00:11:18 - INFO - CLI mode started
+2026-07-04 00:11:21 - INFO - Binance Futures client initialized (testnet=True
+2026-07-04 00:11:21 - INFO - Order parameters validated: BTCUSDT BUY LIMIT qty=0.001
+2026-07-04 00:11:21 - INFO - Placing LIMIT order: BUY 0.001 BTCUSDT @ 65000.0
+2026-07-04 00:11:24 - INFO - LIMIT order placed successfully: 18777744459
+2026-07-04 00:11:24 - INFO - Order placed successfully! ID: 18777744459, Status: NEW
+2026-07-04 00:11:56 - INFO - Logging initialized
+2026-07-04 00:11:56 - INFO - CLI mode started
+2026-07-04 00:11:59 - INFO - Binance Futures client initialized (testnet=True
+2026-07-04 00:11:59 - INFO - Order parameters validated: BTCUSDT SELL LIMIT qty=0.001
+2026-07-04 00:11:59 - INFO - Placing LIMIT order: SELL 0.001 BTCUSDT @ 120000.0
+2026-07-04 00:12:01 - INFO - LIMIT order placed successfully: 18777842324
+2026-07-04 00:12:01 - INFO - Order placed successfully! ID: 18777842324, Status: NEW

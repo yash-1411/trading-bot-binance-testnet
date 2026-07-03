@@ -11,7 +11,7 @@ from bot.client import BinanceFuturesClient
 from bot.orders import OrderResponse
 from bot.validators import validate_order_params, ValidationError
 
-logger = get_logger(__name__)
+logger = get_logger()
 
 def load_credentials():
     api_key = os.getenv('BINANCE_API_KEY')
