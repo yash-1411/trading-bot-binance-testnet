@@ -1,18 +1,19 @@
 # Binance Futures Testnet Trading Bot
 
-A Python-based command-line trading bot that places **Market** and **Limit** orders on the **Binance Futures Testnet (USDT-M)**. The application is built with a modular architecture, input validation, structured logging, and robust exception handling.
+A Python-based command-line application that places **Market** and **Limit** orders on the **Binance Futures Testnet (USDT-M)**. The application follows a modular architecture with input validation, structured logging, exception handling, and an enhanced interactive CLI.
 
 ---
 
 ## Features
 
-- Place **Market** and **Limit** orders
-- Supports **BUY** and **SELL** orders
-- Command Line Interface (CLI) using `argparse`
-- Input validation for all parameters
-- Structured logging of API requests, responses, and errors
-- Exception handling for invalid input, API errors, and network failures
-- Secure API credential management using a `.env` file
+- Place **Market** and **Limit** Orders
+- Support for **BUY** and **SELL** orders
+- Interactive **CLI Menu** (Bonus)
+- Command-line argument support using `argparse`
+- Input validation
+- Logging of API requests, responses, and errors
+- Exception handling
+- Secure API credential management using `.env`
 
 ---
 
@@ -23,41 +24,43 @@ trading_bot/
 │
 ├── bot/
 │   ├── __init__.py
-│   ├── client.py             # Binance API client
-│   ├── cli.py                # Command-line interface
-│   ├── logging_config.py     # Logging configuration
-│   ├── orders.py             # Order response handling
-│   └── validators.py         # Input validation
+│   ├── client.py
+│   ├── cli.py
+│   ├── logging_config.py
+│   ├── orders.py
+│   └── validators.py
 │
 ├── logs/
 │   └── trading_bot.log
 │
-├── .env
 ├── .gitignore
 ├── README.md
-└── requirements.txt
+├── requirements.txt
+└── .env (Not included in GitHub)
 ```
 
 ---
 
-## Requirements
+## Technologies Used
 
-- Python 3.9+
-- Binance Futures Testnet account
-- Binance Testnet API Key and Secret
+- Python 3.x
+- python-binance
+- python-dotenv
+- argparse
+- logging
 
 ---
 
 ## Installation
 
-### 1. Clone the repository
+### Clone the Repository
 
 ```bash
 git clone https://github.com/yash-1411/trading-bot-binance-testnet.git
 cd trading-bot-binance-testnet
 ```
 
-### 2. Create a virtual environment
+### Create Virtual Environment
 
 **Windows**
 
@@ -66,7 +69,7 @@ python -m venv venv
 venv\Scripts\activate
 ```
 
-### 3. Install dependencies
+### Install Dependencies
 
 ```bash
 pip install -r requirements.txt
@@ -79,13 +82,36 @@ pip install -r requirements.txt
 Create a `.env` file in the project root.
 
 ```env
-BINANCE_API_KEY=your_api_key
-BINANCE_API_SECRET=your_secret_key
+BINANCE_API_KEY=YOUR_API_KEY
+BINANCE_API_SECRET=YOUR_API_SECRET
 ```
 
 ---
 
 ## Usage
+
+### Interactive Menu (Bonus Feature)
+
+Run:
+
+```bash
+python -m bot.cli
+```
+
+Menu:
+
+```text
+==========================================
+      BINANCE FUTURES TESTNET BOT
+==========================================
+
+1. Show Account Information
+2. Place Market Order
+3. Place Limit Order
+4. Exit
+```
+
+---
 
 ### View Account Information
 
@@ -93,11 +119,15 @@ BINANCE_API_SECRET=your_secret_key
 python -m bot.cli --info
 ```
 
+---
+
 ### Place a Market Order
 
 ```bash
 python -m bot.cli --symbol BTCUSDT --side BUY --type MARKET --quantity 0.001
 ```
+
+---
 
 ### Place a Limit Order
 
@@ -107,36 +137,21 @@ python -m bot.cli --symbol BTCUSDT --side SELL --type LIMIT --quantity 0.001 --p
 
 ---
 
-## Sample Output
-
-```
-============================================================
-ORDER SUMMARY
-============================================================
-Symbol: BTCUSDT
-Side: BUY
-Type: MARKET
-Quantity: 0.001
-
-============================================================
-ORDER RESPONSE
-============================================================
-Order ID: 18768348061
-Status: NEW
-Executed Qty: 0.0000
-
-SUCCESS! Order placed successfully.
-```
-
----
-
 ## Logging
 
-All API requests, responses, and errors are recorded in:
+Application logs are stored in:
 
-```
+```text
 logs/trading_bot.log
 ```
+
+The log file records:
+
+- Application startup
+- API requests
+- API responses
+- Order placement
+- Errors and exceptions
 
 ---
 
@@ -144,23 +159,30 @@ logs/trading_bot.log
 
 The application handles:
 
-- Invalid user input
-- Missing configuration
+- Invalid CLI inputs
+- Invalid order parameters
 - Binance API errors
 - Network failures
+- Configuration errors
 - Unexpected exceptions
 
 ---
 
-## Technologies Used
+## Bonus Implemented
 
-- Python
-- python-binance
-- argparse
-- python-dotenv
-- logging
+**Enhanced CLI User Experience**
+
+Instead of requiring users to remember long command-line arguments, the application provides an interactive menu that allows users to:
+
+- View account information
+- Place Market orders
+- Place Limit orders
+- Exit the application
+
+This improves usability while maintaining full CLI support.
 
 ---
+
 
 
 ---
