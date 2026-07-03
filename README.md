@@ -30,5 +30,5 @@ A Python trading bot for placing market and limit orders on Binance Futures Test
 ### 1. Clone the Repository
 
 ```bash
-git clone <your-repo-url>
+git clone (https://github.com/yash-1411/trading-bot-binance-testnet.git)
 cd trading_bot
