@@ -133,10 +133,58 @@ def cli_mode():
         sys.exit(1)
 
 def main():
-    if len(sys.argv) == 1:
-        interactive_mode()
-    else:
-        cli_mode()
+    while True:
+        print("\n" + "=" * 50)
+        print("      BINANCE FUTURES TESTNET BOT")
+        print("=" * 50)
+        print("1. Show Account Information")
+        print("2. Place Market Order")
+        print("3. Place Limit Order")
+        print("4. Exit")
+        print("=" * 50)
+
+        choice = input("Enter your choice (1-4): ").strip()
+
+        if choice == "1":
+            sys.argv = ["cli.py", "--info"]
+            cli_mode()
+
+        elif choice == "2":
+            symbol = input("Symbol (e.g. BTCUSDT): ").strip().upper()
+            side = input("Side (BUY/SELL): ").strip().upper()
+            quantity = input("Quantity: ").strip()
+
+            sys.argv = [
+                "cli.py",
+                "--symbol", symbol,
+                "--side", side,
+                "--type", "MARKET",
+                "--quantity", quantity
+            ]
+            cli_mode()
+
+        elif choice == "3":
+            symbol = input("Symbol (e.g. BTCUSDT): ").strip().upper()
+            side = input("Side (BUY/SELL): ").strip().upper()
+            quantity = input("Quantity: ").strip()
+            price = input("Price: ").strip()
+
+            sys.argv = [
+                "cli.py",
+                "--symbol", symbol,
+                "--side", side,
+                "--type", "LIMIT",
+                "--quantity", quantity,
+                "--price", price
+            ]
+            cli_mode()
+
+        elif choice == "4":
+            print("\nThank you for using the Trading Bot.")
+            break
+
+        else:
+            print("\nInvalid choice. Please enter a number between 1 and 4.")
 
 if __name__ == "__main__":
     main()
